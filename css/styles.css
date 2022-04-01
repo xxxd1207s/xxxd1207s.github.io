@@ -1,0 +1,405 @@
+/* common */
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+h1{
+  font-size: 24px;
+  text-align: center;
+  padding: 60px 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+.container {
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s;
+}
+
+a:hover{
+  opacity: 0.5;
+}
+
+
+/* header */
+
+header {
+  background: #efefef;
+}
+
+header .container {
+  padding: 32px 0 64px;  display: flex;
+  align-items: center;
+  width: calc((100% - 16px)/2);
+}
+
+header .container div + div {
+  margin-left: 32px;
+}
+
+header h1{
+padding: 0;
+text-align: left;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header ul li + li {
+  margin-left: 8px;
+}
+
+header .icon {
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+/* works */
+
+.works{
+  padding: 80px 0;
+}
+
+.works h2 {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.works p {
+  line-height: 1.8;
+  margin-top: 16px;
+}
+
+.works ul{
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.works li{
+  width: calc((100% - 16px)/2);
+}
+
+.works li img{
+  width: 100%;
+}
+
+.works li a{
+  display: block;
+}
+
+.works .more{
+  display: block;
+  width: 70%;
+  line-height: 48px;
+  border: 2px solid #333;
+  text-align: center;
+  margin: 32px auto;
+}
+
+
+
+/* skills */
+
+.SKILL{
+  background-color: rgb(111, 252, 252);
+  padding-bottom: 60px;
+}
+
+h1{
+  font-size: 24px;
+  text-align: center;
+}
+
+.skills  > section {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.skills  > section > img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  margin-right: 24px;
+}
+
+.skills  > section > ol{
+padding: 16px;
+}
+
+
+
+/* ご予約フォーム */
+.reservation {
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+  padding: 60px 0;
+}
+
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 8px 24px;
+}
+
+contact-table{
+width: 100%;
+margin-bottom: 20px;
+}
+
+.contact-item, .contact-body {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-item {
+    width: 40%;
+    background-color: #eee;
+}
+
+.contact-body {
+    width: 60%;
+    font-size: 20px;  
+}
+
+
+tr input{
+  size: 60;
+  height: 45px;
+  font-size: large;
+  border-color: #eee;
+}
+
+tr select{
+  width: 100%;
+  height: 55px;
+  font-size: 20px;
+  border-color: #eee;
+  background-color: #eee;
+}
+
+
+
+
+
+input[type="radio"],input[type="checkbox"]{
+  position: relative;
+  top: 2px;
+  transform: scale(1.6);
+  cursor: pointer;
+}
+
+
+/* input[type="radio"]{ 
+} */
+
+/* input[type="checkbox"]{
+  
+} */
+
+
+.idea{
+  position: relative;
+  vertical-align:baseline;
+  bottom: 13px;
+  cursor: pointer;
+}
+
+
+
+
+.contact-etc{
+  margin-bottom: 15px;
+  text-align: center;
+  width: 40%;
+  background-color: #eee;
+}
+
+
+tr textarea {
+  border: 2px solid rgb(194, 194, 194);
+  width: 99%;
+  height: 120px;
+  font-size: 20px;
+}
+
+.button{
+  width: 250px;
+  background-color: rgb(53, 53, 53);
+  color: #eee;
+  border: 1px solid #333;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  padding:16px;
+  cursor: pointer;
+}
+
+
+
+/* エラーメッセージのスタイル */
+
+#error1 {
+  font-weight: normal;
+  font-size: 90%;
+  color: red;
+  opacity: 0;
+}
+
+#error1.pushed{
+  opacity: 1;
+}
+#error2 {
+  font-weight: normal;
+  font-size: 90%;
+  color: red;
+  opacity: 0;
+}
+
+#error2.pushed{
+  opacity: 1;
+}
+
+
+
+#your_name.pushed{
+  border: 2px solid rgb(255, 116, 116);
+  background-color: rgb(253, 232, 236);
+}
+
+#your_emaill.pushed{
+  border: 2px solid rgb(255, 116, 116);
+  background-color: rgb(253, 232, 236);
+}
+
+
+
+
+
+
+/* footer */
+footer {
+  padding: 60px 0;
+  text-align: center;
+  color: #aaa;
+}
+
+/* 上に戻るボタン */
+#to_top {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+#to_top.scrolled {
+  opacity: 1;
+}
+
+#to_top i {
+  font-size: 32px;
+  color: #22577a;
+}
+
+
+
+
+
+
+
+
+
+/* medium screen */
+@media(min-width: 600px){
+
+  .works li{
+    width: calc((100% - 32px)/3);
+  }
+}
+
+
+
+/* large screen */
+@media(min-width: 800px){
+  .container{
+    width: calc(100% 0 32px);
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+
+.skills {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 250px;
+  padding-bottom: 60px;
+}
+
+.skills > section> ol{
+  width: calc((100% - 16px)/2);
+} 
+
+.skills  > section > img{
+  margin-right: 12px;
+}
+
+.skills  > section > ol{
+  padding: 12px;
+}
+
+
+
+
+
+
+
+
+
+  header form{
+    display: block;
+  }
+}
