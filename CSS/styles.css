@@ -203,10 +203,6 @@ margin-bottom: 20px;
 }
 
 
-tr{
-  margin-bottom: 24px;
-}
-
 tr input{
   size: 60;
   height: 45px;
@@ -242,7 +238,7 @@ input[type="radio"],input[type="checkbox"]{
 } */
 
 
-span {
+.idea{
   position: relative;
   vertical-align:baseline;
   bottom: 13px;
@@ -285,13 +281,38 @@ tr textarea {
 
 
 /* エラーメッセージのスタイル */
-.error {
-  width : 100%;
-  padding: 0;
-  display: inline-block;
+
+#error1 {
+  font-weight: normal;
   font-size: 90%;
   color: red;
-  box-sizing: border-box;
+  opacity: 0;
+}
+
+#error1.pushed{
+  opacity: 1;
+}
+#error2 {
+  font-weight: normal;
+  font-size: 90%;
+  color: red;
+  opacity: 0;
+}
+
+#error2.pushed{
+  opacity: 1;
+}
+
+
+
+#your_name.pushed{
+  border: 2px solid rgb(255, 116, 116);
+  background-color: rgb(253, 232, 236);
+}
+
+#your_emaill.pushed{
+  border: 2px solid rgb(255, 116, 116);
+  background-color: rgb(253, 232, 236);
 }
 
 

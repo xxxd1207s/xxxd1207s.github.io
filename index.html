@@ -180,23 +180,28 @@
   <class="form">
   <h1 class="reservation">ご予約はこちら</h1>
   <form action="form" method="post" id="form">
-      <table class="contact-table">
+      <table class="contact-table" >
         <tr>
-          <th class="contact-item">お名前</th>
+          <th class="contact-item" >
+            お名前<br>
+            <span id="error1">必須項目です。</span>
+          </th>
           <td class="contact-body">
-            <input type="text" id="your_name" name="名前" size="60" class="form-text"/>
+            <input type="text" id="your_name" name="名前" size="60" class="form-text" placeholder="山田太郎"/>
           </td>
         </tr>
 
         <!--placeholder="例）山田太郎"> -->
 
         <tr>
-          <th class="contact-item">メール</th>
+          <th class="contact-item">
+            メール<br>
+            <span id="error2">必須項目です。</span>
+          </th>
           <td class="contact-body">
-            <input type="email" id="your_emaill" name="メール" size="60" class="form-text"/>
+            <input type="email" id="your_emaill" name="メール" size="60" class="form-text"placeholder="yamada_taro@yamadataro.jp"/>
           </td>
         </tr>
-
         <!-- placeholder="例）guest@example.com"> -->
 
         <tr>
@@ -217,15 +222,18 @@
             <th class="contact-item">撮影プラン</th>
             <td class="contact-body">
              
-              <label class="plan">
-                <input type="radio" name="plan" value="ムービー撮影プラン"/>
-                <span>ムービー撮影プラン</span>
-              </label>
+              <form id="planbox">
+                <label class="plan">
+                  <input type="radio" name="plan" value="ムービー撮影プラン"/>
+                  <span class="idea">ムービー撮影プラン</span>
+                </label>
+  
+                <label class="plan">
+                  <input type="radio" name="plan" value="デザインフォト撮影プラン"/>
+                  <span class="idea">デザインフォト撮影プラン</span>
+                </label>
 
-              <label class="plan">
-                <input type="radio" name="plan" value="デザインフォト撮影プラン"/>
-                <span>デザインフォト撮影プラン</span>
-              </label>
+              </form>
              
             </td>
          </tr>
@@ -237,13 +245,13 @@
               <label class="contact-timing" id="contact-timing">
 
                 <input type="checkbox" id="check" value="9:00-12:00" />
-                <span>9:00-12:00</span>
+                <span class="idea">9:00-12:00</span>
 
                 <input type="checkbox" id="check" value="13:00-16:00"/>
-                <span>13:00-16:00</span>
+                <span class="idea">13:00-16:00</span>
 
                 <input type="checkbox"  id="check" value="17:00-20:00" />
-                <span>17:00-20:00</span>
+                <span class="idea">17:00-20:00</span>
 
               </label>
             </td>
